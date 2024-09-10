@@ -1,22 +1,5 @@
-import React from "react";
-import NewTask from "../components/tasks/NewTask";
-import TaskContainer from "../components/tasks/TaskContainer";
-import TotalTask from "../components/tasks/TotalTask";
+import { TaskPage } from "@/src/pages/task";
 
-const page = () => {
-	return (
-		<main className="container w-ful py-12  mx-auto">
-			<h1 className="text-3xl font-bold">🎒 Task </h1>
-			<p>El aplicativo para manejar tus tareas en el dia a dia!</p>
+const Tasks = () => <TaskPage />;
 
-			<div className="flex items-center mt-2 text-lg font-semibold">
-				<TotalTask />
-				<NewTask />
-			</div>
-			<div className="border-b border-gray-300 my-4" />
-			<TaskContainer />
-		</main>
-	);
-};
-
-export default page;
+export default Tasks;
